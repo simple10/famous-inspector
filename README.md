@@ -13,20 +13,18 @@ Check the box for **Developer Mode**
 
 Click the button **Load unpacked extension...**
 
-Select the folder where you downloaded the repository.
-
-The extension is now installed.
+Select the folder you downloaded the repository into and you are done.
 
 ## Usage
 Open the devtools on any page containing the requireJS build of famous
 and an exposed window.context. To test it out, try opening test.html
 
 ## Project Structure
-`js/` contains the server that the UI talks through to the famous runtime.
+`server/` contains the server that the UI talks through to the famous runtime.
 
-`App/` contains the web inspector client that sits within devtools.
+`app/` contains the web inspector client that sits within devtools.
 
-`App/init.js` bootstraps the extension UI and patches all the APIs needed to connect
+`app/init.js` bootstraps the extension UI and patches all the APIs needed to connect
 to famous. This is the only file needed in the folder.
 
 `server/FamousParasite.js` is the main glue that hooks into famous and translates it into
