@@ -134,21 +134,4 @@
         d.children = children
         children.forEach(function (child) { traverse(child, cb)  })
     }
-    
-    function getOutput(id) {
-        var n = registry[id]
-        while(n._child) n = Array.isArray(n._child) ?  n._child[0] : n._child
-        return n._object.content
-    }
-
-    function getDOMNodes(instances) {
-        var childNodes = []
-        Object.keys(instances).forEach(function (id) {
-            childNodes.push.apply(childNodes,
-                                  registry[id].children
-                                  .map(domify)
-                                 )
-        })
-        return childNodes;
-    }
 })
