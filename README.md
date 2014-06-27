@@ -61,11 +61,11 @@ I'll leave it as a proof of concept of how to hook into this frame
 - and hook into agents.domAgent which will call out to server/DomAgent.js -> server/FamousParasite.js
 
 ###todo
-- [] quiet mode for hiding modifiers 
-- [] add gestures for rotateAxis and higher level transforms. drag/pull on inputs
-- [] add inputs for skew, color, origin, aline 
-- [] tweening and animation
-- [] maniputale Scene Definition instead of object notation?
-- [] redo tree ui for virtual scrolling, nuke chrome folder and allow single medium of communication
-- [] make inputs read mind
-- [] leap motion integration
+- [ ] quiet mode for hiding modifiers 
+- [ ] add gestures for rotateAxis and higher level transforms. drag/pull on inputs
+- [ ] add inputs for skew, color, origin, aline 
+- [ ] tweening and animation
+- [ ] maniputale Scene Definition instead of object notation?
+- [ ] redo tree ui for virtual scrolling, nuke chrome folder and allow single medium of communication
+- [ ] make inputs read mind
+- [ ] leap motion integration
