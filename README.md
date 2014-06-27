@@ -54,11 +54,9 @@ famous mixed-mode(stencil/clear the surface dimensions), so rather than perfect 
 I'll leave it as a proof of concept of how to hook into this frame
 
 ### Repurposing server for a new extension
-- Most of the builtin extension mechanisms are really bad for a number of reasons
-- so we wrap eval in a client server. 
-- To create a new UI ontop of the existing system,just `rm -rf chrome app/*.js`
-- add a new `app/init.js`
-- and hook into agents.domAgent which will call out to server/DomAgent.js -> server/FamousParasite.js
+* To create a new UI ontop of the existing system,just `rm -rf chrome app/*.js`
+* add a new `app/init.js`
+* and hook into agents.domAgent which will call out to server/DomAgent.js -> server/FamousParasite.js
 
 ###todo
 - [ ] quiet mode for hiding modifiers 
