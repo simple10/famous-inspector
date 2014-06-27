@@ -65,3 +65,8 @@ I'll leave it as a proof of concept of how to hook into this frame
 - [ ] redo tree ui for virtual scrolling, nuke chrome folder and allow single medium of communication
 - [ ] make inputs read mind
 - [ ] leap motion integration
+
+
+
+### metrics + analytics
+![wow](https://raw.github.com/FamouInternal/adnan-wahab/masher/metrics.png)
