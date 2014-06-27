@@ -69,4 +69,6 @@ I'll leave it as a proof of concept of how to hook into this frame
 
 
 ### metrics + analytics
-![wow](https://raw.github.com/FamouInternal/adnan-wahab/masher/metrics.png)
+![wow](https://raw.githubusercontent.com/FamousInternal/famous-inspector/master/metrics.png)
+
+
