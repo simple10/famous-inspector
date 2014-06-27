@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<link href="http://famo.us/lib/famous/famous.css" rel="stylesheet">
+		<script src="http://famo.us/lib/alameda.min.js"></script>
+		<script src="http://code.famo.us/famous/0.2/famous.js"></script>
+		<script>
+			require(['famous/core/Engine', 'famous/core/Modifier', 'famous/core/Surface', 'famous/core/Transform', 'famous/core/View'], function (Engine, Modifier, Surface, Transform, View) {
+
+			var ctx = Engine.createContext()
+      var nodes = [ctx.add(new Modifier)]
+
+			window.context = ctx
+
+		    while(Math.random() < .99)
+			    (function rando() {
+   			    var mod = nodes[Math.random() * nodes.length | 0]
+	  		        .add(new Modifier({origin: [1,2].map(Math.random), opacity: .8}))
+			      mod.add(new Surface({
+			        properties:  { background: randomColor() },
+			        size: [Math.random() * 200, Math.random() * 200]
+			      }))
+			    })()
+  
+				function randomColor() { return 'hsl(' + Math.random() * 360  + ',100%, 50%)' }
+			})
+		</script>
+
+	</head>
+	<body>
+	</body>
+</html>

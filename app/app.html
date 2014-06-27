@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="object-src 'none'; script-src 'self' 'unsafe-eval'">
+
+    <link rel="stylesheet" type="text/css" href="../chrome/dialog.css">
+    <link rel="stylesheet" type="text/css" href="../chrome/inspector.css">
+    <link rel="stylesheet" type="text/css" href="../chrome/inspectorCommon.css">
+    <link rel="stylesheet" type="text/css" href="../chrome/inspectorSyntaxHighlight.css">
+    <link rel="stylesheet" type="text/css" href="../chrome/popover.css">
+
+    <script src="../chrome/inspector.js"></script>
+    <script src="../chrome/utilities.js"></script>
+    <script src="../chrome/Linkifier.js"></script>
+    <script src="../chrome/DOMExtension.js"></script>
+    <script src="../chrome/treeoutline.js"></script>
+    <script src="../chrome/UIString.js"></script>
+    <script src="../chrome/Object.js"></script>
+    <script src="../chrome/View.js"></script>
+    <script src="../chrome/Settings.js"></script>
+    <script src="../chrome/HelpScreen.js"></script>
+    <script src="../chrome/InspectorFrontendHostStub.js"></script>
+    <script src="../chrome/UIUtils.js"></script>
+    <script src="../chrome/ContextMenu.js"></script>
+    <script src="../chrome/ParsedURL.js"></script>
+    <script src="../chrome/ResourceUtils.js"></script>
+    <script src="../chrome/DOMAgent.js"></script>
+    <script src="../chrome/TabbedPane.js"></script>
+    <script src="../chrome/SidebarPane.js"></script>
+    <script src="../chrome/ElementsTreeOutline.js"></script>
+    <script src="../chrome/SplitView.js"></script>
+    <script src="../chrome/SidebarView.js"></script>
+    <script src="../chrome/SidebarTreeElement.js"></script>
+    <script src="../chrome/Popover.js"></script>
+    <script src="../chrome/SuggestBox.js"></script>
+    <script src="../chrome/TextPrompt.js"></script>
+    <script src="../chrome/Section.js"></script>
+    <script src="../chrome/PropertiesSection.js"></script>
+    <script src="../chrome/RemoteObject.js"></script>
+    <script src="../chrome/ObjectPropertiesSection.js"></script>
+    <script src="../chrome/ObjectPopoverHelper.js"></script>
+    <script src="../chrome/NativeBreakpointsSidebarPane.js"></script>
+    <script src="../chrome/DOMBreakpointsSidebarPane.js"></script>
+    <script src="../chrome/Color.js"></script>
+    <script src="../chrome/ContextMenu.js"></script>
+    <script src="../chrome/SoftContextMenu.js"></script>
+    <script src="../chrome/KeyboardShortcut.js"></script>
+    <script src="../chrome/DOMPresentationUtils.js"></script>
+    <script src="../chrome/ResourceTreeModel.js"></script>
+    <script src="../chrome/RuntimeModel.js"></script>
+    <script src="../chrome/SearchableView.js"></script>
+    <script src="../chrome/CSSNamedFlowCollectionsView.js"></script>
+    <script src="../chrome/CSSNamedFlowView.js"></script>
+    <script src="../chrome/EventListenersSidebarPane.js"></script>
+    <script src="App.js"></script>
+		<script src="TransformView.js"></script>
+		<script src="mixpanel-2.2.js"></script>
+		<style>
+			.sidebar-pane-title::before  {
+			background-image: none;
+			display: none;
+			}
+			.sidebar-pane-title {
+			height: auto;
+			padding: 5px;
+			height: 75px;
+		  }
+
+			.sidebar-pane {
+			  border-bottom: none !important;
+			}
+
+			.famous-transform {
+			display: inline;
+			float: left;
+			width: 20%;
+			margin-left: 2.5%;
+			margin-right: 2.5%;
+			text-align: center;
+			}
+
+			.webkit-html-tag.close {
+			  
+				}
+				.sidebar-pane-title{
+				  height: 100%;
+					}
+					
+				.side-pane {
+					  background: #ccc !important;
+			   }
+					.split-view-sidebar {
+					  background: hsl(0, 0%, 88%);
+					  padding-top: 10px;
+					}
+					
+
+		</style>
+</head>
+<body class="undocked" id="-chrome-dev-tools">
+    <div class="fill vbox inspector-view visible" spellcheck="false">
+        <div class="tabbed-pane vbox visible">
+            <div id="main-panel-holder" class="tabbed-pane-content scroll-target"></div>
+        </div>
+    </div>
+    <script src="init.js"></script>
+</body>
+</html>
