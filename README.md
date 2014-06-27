@@ -21,7 +21,7 @@ The extension is now installed.
 Open the devtools on any page containing the requireJS build of famous
 and an exposed window.context. To test it out, try opening test.html
 
-### Project Structure
+## Project Structure
 `js/` contains the server that the UI talks through to the famous runtime.
 
 `App/` contains the web inspector client that sits within devtools.
@@ -46,7 +46,7 @@ order if that is necessary.
 
 `chrome/*` is a list of files forked from
 https://chromium.googlesource.com/chromium/blink.git/+/master/Source/devtools/front_end/
-to bootstrap the look and feel of the builtin web inspector.
+to bootstrap the builtin web inspector.
 
 `App/InspectorOverlayPage.html` is an experimental threejs overlay for unity-like
 handles to allow you to transform matrices with your hands. Would be really easy in
@@ -66,4 +66,5 @@ add gestures for rotateAxis and higher level transforms. drag/pull on inputs
 add inputs for skew, color, origin, aline 
 tweening and animation
 maniputale Scene Definition instead of object notation?
-redo tree ui for virtual scrolling, nuking chrome folder and allow single medium of communication
+redo tree ui for virtual scrolling, nuke chrome folder and allow single medium of communication
+make inputs more 'do what i mean '
